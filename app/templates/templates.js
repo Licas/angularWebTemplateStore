@@ -1,3 +1,5 @@
+'use strict';
+
 angular.module('templateStore.templates',['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider){
@@ -9,5 +11,6 @@ angular.module('templateStore.templates',['ngRoute'])
 }])
 
 .controller('TemplatesCtrl',['$scope', function($scope){
-    console.log($scope);
+    //console.log($scope);
+   // console.log("Nel controller TemplatesCtrl");
 }]);

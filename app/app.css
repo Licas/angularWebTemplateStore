@@ -1,4 +1,8 @@
 /* app css stylesheet */
+.mainContent {
+  padding: 40px 15px;
+  text-align: center;
+}
 
 .menu {
   list-style: none;
