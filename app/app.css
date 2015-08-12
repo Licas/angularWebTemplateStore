@@ -1,6 +1,6 @@
 /* app css stylesheet */
 .mainContent {
-  padding: 40px 15px;
+  padding: 80px 15px;
   text-align: center;
 }
 
@@ -9,6 +9,28 @@
   border-bottom: 0.1em solid black;
   margin-bottom: 2em;
   padding: 0 0 0.5em;
+}
+
+.templates{
+    text-align: center;
+}
+
+.templates img{
+    width: 70%;
+}
+
+.templates a{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+.templates .col-md-4 {
+    margin-bottom: 20px;
+}
+
+.img-full {
+    width:100%;
 }
 
 .menu:before {

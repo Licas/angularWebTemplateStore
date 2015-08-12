@@ -1,0 +1,82 @@
+[
+    {
+        "id":1,
+        "name":"Blue Template 1",
+        "price":"19.99",
+        "type":"html5",
+        "img":[
+            {
+                "name":"blue-1.jpg"
+            },
+            {
+                "name":"blue-1.jpg"
+            },
+            {
+                "name":"blue-1.jpg"
+            },{
+                "name":"blue-1.jpg"
+            }
+        ],
+        "description":"Blue Template 1 description"
+    },
+    {
+        "id":2,
+        "name":"Blue Template 2",
+        "price":"24.99",
+        "type":"html5",
+        "img":[
+            {
+                "name":"blue-2.jpg"
+            }
+        ],
+        "description":"Blue Template 2 description"
+    },
+    {
+        "id":3,
+        "name":"Green Template 1",
+        "price":"14.99",
+        "type":"html5",
+        "img":[
+            {
+                "name":"green-1.jpg"
+            }
+        ],
+        "description":"Green Template 1 description"
+    },
+    {
+        "id":4,
+        "name":"Grey Template 1",
+        "price":"12.99",
+        "type":"html5",
+        "img":[
+            {
+                "name":"grey-1.jpg"
+            }
+        ],
+        "description":"Grey Template 1 description"
+    },
+    {
+        "id":5,
+        "name":"Purple Template 1",
+        "price":"12.99",
+        "type":"html5",
+        "img":[
+            {
+                "name":"purple-1.jpg"
+            }
+        ],
+        "description":"Purple Template 1 description"
+    },
+    {
+        "id":6,
+        "name":"Multi-color Template 1",
+        "price":"9.99",
+        "type":"html5",
+        "img":[
+            {
+                "name":"multi-1.jpg"
+            }
+        ],
+        "description":"Multi-color Template 1 description"
+    }
+]

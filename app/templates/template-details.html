@@ -1,0 +1,41 @@
+<div>
+    <a href="#/templates">Back</a>
+    <br><br>
+
+    <div class="col-md-4">
+        <img ng-src="img/{{mainImage}}" class="img-full">
+        <div class="row">
+            <div ng-repeat="image in templateDetails.img">
+                <div class="col-md-3">
+                    <img ng-src="img/{{image.name}}">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <h3>{{templateDetails.name}}</h3>
+        <p><b>Type:</b> {{templateDetails.type}}</p>
+        <p><b>Description:</b> {{templateDetails.description}}</p>
+        <h4>{{templateDetails.price | currency}}</h4>
+
+
+        <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+            <label for="buy">Buy Now:</label>
+            <input type="hidden" name="cmd" value="_xclick">
+            <input type="hidden" name="business" value="manuelmoriniseller@sandbox.com">
+            <input type="hidden" name="hosted_button_id" value="6RNT8A4HBBJRE">
+            <input type="hidden" name="item_name" value="{{templateDetails.name}}">
+            <input type="hidden" name="item_number" value="{{templateDetails.id}}">
+            <input type="hidden" name="currency_code" value="USD">
+            <input type="hidden" name="amount" value="{{templateDetails.price}}">
+            <input type="hidden" name="no_shipping" value="1">
+            <input type="hidden" name="return" value="http://localhost:8000/app">
+            <input type="hidden" name="cancel_return" value="http://localhost:8000/app">
+            <input type="image"
+    src="https://www.sandbox.paypal.com/en_US/i/btn/btn_buynowCC_LG.gif"
+    border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif"
+    width="1" height="1">
+        </form>
+    </div>
+</div>
