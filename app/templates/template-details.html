@@ -1,13 +1,11 @@
 <div>
-    <a href="#/templates">Back</a>
-    <br><br>
-
     <div class="col-md-4">
-        <img ng-src="img/{{mainImage}}" class="img-full">
+        <img ng-src="img/{{mainImage}}" class="img-full" />
+
         <div class="row">
-            <div ng-repeat="image in templateDetails.img">
+            <div ng-repeat="image in templateDetails.img | limitTo:4">
                 <div class="col-md-3">
-                    <img ng-src="img/{{image.name}}">
+                    <img class="img-full" ng-src="img/{{image.name}}" ng-click="setImage(image)">
                 </div>
             </div>
         </div>
@@ -37,5 +35,8 @@
             <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif"
     width="1" height="1">
         </form>
+
+        <a class="btn btn-primary " href="#/templates">Back</a>
+
     </div>
 </div>

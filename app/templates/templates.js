@@ -48,4 +48,9 @@ angular.module('templateStore.templates',['ngRoute'])
                 $scope.mainImage = $scope.templateDetails.img[0].name;
             }
         });
+
+    $scope.setImage = function(image) {
+        //console.log(image);
+        $scope.mainImage = image.name;
+    }
 }]);
